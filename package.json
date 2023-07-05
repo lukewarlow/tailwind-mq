@@ -1,0 +1,43 @@
+{
+  "name": "tailwind-mq",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Tailwind plugin for various media query variants",
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "tailwind-css",
+    "tailwindcss-plugin",
+    "media-query",
+    "media-queries",
+    "media-queries",
+    "preference-media-queries",
+    "accessibility"
+  ],
+  "repository": "https://github.com/lukewarlow/tailwind-mq",
+  "author": "Luke Warlow",
+  "license": "MIT",
+  "files": ["dist", "src"],
+  "source": "src/index.ts",
+  "module": "./dist/index.module.js",
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.module.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "scripts": {
+    "build": "microbundle --target node --sourcemap false --format cjs,esm"
+  },
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  }
+}
