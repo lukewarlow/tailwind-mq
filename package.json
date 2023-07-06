@@ -19,23 +19,18 @@
   "license": "MIT",
   "files": ["dist", "src"],
   "source": "src/index.ts",
-  "module": "./dist/index.module.js",
   "main": "./dist/index.cjs",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.module.js"
-      },
-      "require": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.cjs"
-      }
-    }
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
   },
   "scripts": {
-    "build": "microbundle --target node --sourcemap false --format cjs,esm"
+    "build": "microbundle --target node --sourcemap false --format cjs,modern"
   },
   "devDependencies": {
     "microbundle": "^0.15.1"
