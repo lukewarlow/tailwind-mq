@@ -55,6 +55,41 @@ These are the "wrong" way round to match the existing motion variants inside of 
 
 - `inverted-colors`: A variant for `@media (inverted-colors: inverted)`.
 
+### [`scripting`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/scripting)
+
+- `noscript`: A variant for `@media (scripting: none)`.
+- `scripting`: A variant for `@media (scripting: enabled)`.
+- `scripting-initial`: A variant for `@media (scripting: initial-only)`.
+
+### [`update`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/update)
+
+- `update-none`: A variant for `@media (update: none)`.
+- `update-slow`: A variant for `@media (update: slow)`.
+- `update-fast`: A variant for `@media (update: fast)`.
+
+### [`overflow-block`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/overflow-block)
+
+- `overflow-block-none`: A variant for `@media (overflow-block: none)`.
+- `overflow-block-scroll`: A variant for `@media (overflow-block: scroll)`.
+- `overflow-block-optional-paged`: A variant for `@media (overflow-block: optional-paged)`.
+- `overflow-block-paged`: A variant for `@media (overflow-block: paged)`.
+
+### [`overflow-inline`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/overflow-inline)
+
+- `overflow-inline-none`: A variant for `@media (overflow-inline: none)`.
+- `overflow-inline-scroll`: A variant for `@media (overflow-inline: scroll)`.
+
+### [`dynamic-range`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/dynamic-range)
+
+- `sdr`: A variant for `@media (dynamic-range: standard)`.
+- `hdr`: A variant for `@media (dynamic-range: high)`.
+
+### [`color-gamut`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/color-gamut)
+
+- `srgb`: A variant for `@media (color-gamut: srgb)`.
+- `p3`: A variant for `@media (color-gamut: p3)`.
+- `rec2020`: A variant for `@media (color-gamut: rec2020)`.
+
 ## License
 
 This project is licensed under the [MIT License](https://github.com/lukewarlow/tailwind-mq/blob/master/LICENSE).
