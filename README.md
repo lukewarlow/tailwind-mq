@@ -30,10 +30,6 @@ plugins: [
 
 If you want a media query to be added to this plugin please open an issue or PR.
 
-### [`forced-colors`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/forced-colors)
-
-- `forced-colors`: A variant for `@media (forced-colors: active)`.
-
 ### [`prefers-contrast`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-contrast)
 
 - `contrast-custom`: A variant for `@media (prefers-contrast: custom)`.
@@ -89,6 +85,12 @@ These are the "wrong" way round to match the existing motion variants inside of 
 - `srgb`: A variant for `@media (color-gamut: srgb)`.
 - `p3`: A variant for `@media (color-gamut: p3)`.
 - `rec2020`: A variant for `@media (color-gamut: rec2020)`.
+
+## Removed Features
+
+### [`forced-colors`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/forced-colors)
+
+- This was removed as it is now in TailwindCSS itself.
 
 ## License
 
