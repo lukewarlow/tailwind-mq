@@ -90,7 +90,7 @@ These are the "wrong" way round to match the existing motion variants inside of 
 
 ### [`forced-colors`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/forced-colors)
 
-- This was removed as it is now in TailwindCSS itself.
+- This was removed as it is now in TailwindCSS 3.4+.
 
 ## License
 
