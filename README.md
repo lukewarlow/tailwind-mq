@@ -16,10 +16,21 @@ npm install -D tailwind-mq
 yarn add -D tailwind-mq
 ```
 
-Add it to the plugins array of your Tailwind config. Call the functions for the utilities you want to use.
+### When using CSS config
+
+Add an import for the plugin in your CSS file.
+
+```css
+@import "tailwind-mq";
+```
+
+### When using JS config
+
+Add it to the plugins array of your Tailwind config.
 
 ```js
-const { mediaQueries } = require('tailwind-mq');
+import { mediaQueries } from 'tailwind-mq';
+// const { mediaQueries } = require('tailwind-mq'); // for CommonJS
 
 plugins: [
 	mediaQueries(), // no options to configure
